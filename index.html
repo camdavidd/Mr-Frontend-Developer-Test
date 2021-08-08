@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+    <meta name="keywords" content="">
+		<title>MR Frontend Developer Technical Test - Moustache Republic</title>
+		<!-- Favicon -->
+    <link href="#" rel="shortcut icon">
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
+		<script src="assets/plugins/jquery.min.js"></script>
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header class="header right " >
+			<div class="container">
+				<div class="header-menu">
+					<ul class="nav right">
+						<li class="nav-item">
+							<a class="nav-link" id="cart">My Cart ( <span class="total-count">0</span> )</a>
+						</li>
+						
+					</ul>
+				</div>
+				<!-- Menu Extra -->
+				<div class="header-menu-extra" >
+					<ul class="list-inline-sm">
+						<li class="minicart" id="cart"><i class="fa fa-shopping-cart"></i> ( <span class="total-count">0</span> )</li>
+					</ul>
+				</div>
+				<div class="shopping-cart">
+		
+				</div> <!--end shopping-cart -->
+			</div><!-- end container -->
+		</header>
+		<!-- end Header -->
+
+		<section class="section">
+			<div class="container">
+				<div class="row col-spacing-50">
+					<div class="col-12 col-lg-7 col-sm-12 col-xs-12">
+						<div class="shop-img">
+						<img src="assets/images/classic-tee.jpg"/>
+					</div>
+					</div>
+					<div class="col-12 col-lg-5">
+						<h4 class="font-weight-normal margin-0">Classic Tee</h4>
+						<div class="product-price">
+							<hr class="margin-bottom-5">
+							<h6 class="font-weight-semi-bold">$75.00</h6>
+							<hr class="margin-top-5">
+						</div>
+						<p class="font-small">Dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt.
+						   Quod autem ratione actum est, id officium appellamus dolor sit amel, consectetur adipiscing
+						   elit. Haec et tu ita posuisti, et verba vestra sunt. Quod autem ratione est, id officium
+						   appellamus
+						</p>
+						<p class="font-small font-weight-semi-bold margin-top-30 margin-bottom-10">SIZE<span class="star">*</span>   <b class="text-main" data-myval="2" id="showsize"></b></p>
+						<!-- Sizes -->
+							<a href="#!" name="size" id="small" onclick="myFunctionS()" class="button button-outline-grey button-xs button-square margin-bottom-20 ">S</a>
+							<a  href="#!" name="size" id="medium" onclick="myFunctionM()" class="button button-outline-grey button-xs button-square margin-bottom-20" >M</a>
+							<a  href="#!" name="size" id="large" onclick="myFunctionL()" class="button button-outline-grey button-xs button-square margin-bottom-20">L</a>
+						<!-- Sizes -->
+						<div class="margin-top-10">
+							<button onclick="check()" id="button1" class=" button button-md button-outline-dark-2 " ><b>Add to Cart</b></button>
+              <button onclick="check()" id="button2" class="addtocart button button-md button-outline-dark-2 " data-name="S" style="display:none;" ><b>Add to Cart</b></button>
+              <button onclick="check()" id="button3" class="addtocart button button-md button-outline-dark-2 " data-name="M" style="display:none;"><b>Add to Cart</b></button>
+              <button onclick="check()" id="button4" class="addtocart button button-md button-outline-dark-2 " data-name="L" style="display:none;"><b>Add to Cart</b></button>
+						</div>
+					</div>
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section>
+
+
+		<!-- ***** JAVASCRIPTS ***** -->
+		<script src="assets/js/main.js" ></script>
+	</body>
+</html>
