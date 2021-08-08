@@ -1,0 +1,56 @@
+
+//
+// Font Families //
+//
+.font-family-primary { font-family: $font-family-primary }
+.font-family-secondary, .font-family-playfair { font-family: $font-family-secondary }
+.font-family-tertiary { font-family: $font-family-tertiary }
+
+//
+// Font Weights //
+//
+
+.font-weight-medium { font-weight: $font-weight-medium; }
+.font-weight-semi-bold { font-weight: $font-weight-semi-bold; }
+.font-weight-extra-bold { font-weight: $font-weight-extra-bold; }
+.font-weight-black { font-weight: $font-weight-black; }
+
+//
+// Text Colors //
+//
+
+
+*.text-main { color: $color-main; }
+*.text-main-light { color: $color-main-light; }
+
+
+
+
+//
+// Spacing - Margin //
+//
+.margin-top-5 { margin-top: 5px; }
+.margin-top-10 { margin-top: 10px; }
+.margin-top-20 { margin-top: 20px; }
+.margin-top-30 { margin-top: 30px; }
+.margin-top-40 { margin-top: 40px; }
+.margin-top-50 { margin-top: 50px; }
+.margin-top-60 { margin-top: 60px; }
+.margin-top-70 { margin-top: 70px; }
+.margin-right-10 { margin-right: 10px; }
+.margin-right-20 { margin-right: 20px; }
+.margin-right-30 { margin-right: 30px; }
+.margin-left-10 { margin-left: 10px; }
+.margin-left-20 { margin-left: 20px; }
+.margin-left-30 { margin-left: 30px; }
+.margin-bottom-5 { margin-bottom: 5px; }
+.margin-bottom-10 { margin-bottom: 10px; }
+.margin-bottom-20 { margin-bottom: 20px; }
+.margin-bottom-30 { margin-bottom: 30px; }
+.margin-bottom-40 { margin-bottom: 40px; }
+.margin-bottom-50 { margin-bottom: 50px; }
+.margin-bottom-60 { margin-bottom: 60px; }
+.margin-bottom-70 { margin-bottom: 70px; }
+
+.margin-0 { margin: 0 !important; }
+

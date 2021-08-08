@@ -1,0 +1,262 @@
+//
+// Header Menu //
+//
+.header {
+	top: 0;
+	z-index: 993;
+	overflow: visible;
+	background: $bg-header;
+	width: 100%;
+	height: 40px;
+	@include transition(ease-in-out 0.2s);
+	&.hide {
+		@include transform(translateY(-100%));
+	}
+	.container, .container-fluid {
+		@include display-flex;
+	    align-items: center;
+	    height: 100%;
+	}
+	
+	
+	.header-menu {
+		display: inline-block;
+		font-size: 14px;
+		z-index: 995;
+		.nav {
+			display: block;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			.nav-item {
+				text-align: left;
+				.nav-link {
+					padding: 0;
+					font-family: $font-family-tertiary;
+					letter-spacing: -0.2px;
+					color: $color-main;
+					&:hover, &.active {
+						color: $color-main;
+					}
+				}
+
+				
+			}
+		}
+		
+	}
+	.header-menu-extra {
+		a {
+			&:not(.button, .button-circle) {
+				color: $color-main;
+				&:hover, &:focus { color: $color-main; }
+			}
+		}
+		
+	}
+
+}
+
+@include breakpoint-above(lg) {
+	.header {
+		//
+		// Sizes //
+		//
+		.header-menu {
+			height: 80px;
+		}
+	
+		//
+		// Alignments //
+		//
+		&:not(.left, .center) {
+			.header-menu {
+				margin-left: auto;
+			}
+		}
+		&.left {
+			.header-logo {
+				margin-right: 30px;
+			}
+			.header-menu {
+				margin-right: auto;
+			}
+		}
+		&.center {
+			.header-logo {
+				margin-right: auto;
+			}
+			.header-menu {
+				.nav {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					@include transform(translateX(-50%));
+					width: auto;
+					text-align: center;
+				}
+			}
+		}
+		.header-menu {
+			.nav {
+				.nav-item {
+					position: relative;
+					display: inline-block;
+					height: 100%;
+					margin: 0 0 0 20px;
+					&:first-child {
+						margin-left: 0;
+					}
+					.nav-link {
+						display: inline-block;
+						line-height: 80px;
+						&:before {
+							position: absolute;
+							right: 0;
+							bottom: 22px;
+							left: 0;
+							content: '';
+							background: $bg-header;
+							height: 0;
+							@include transition(all 0.14s cubic-bezier(0.165, 0.84, 0.44, 1));
+						}
+						&.d-toggle {
+							padding-right: 14px;
+						}
+					}
+				
+					&:hover {
+						.nav-link {
+							&:before {
+								height: 6px;
+							}
+						}
+					
+					}
+				}
+			}
+		
+			
+		
+		}
+		
+		.header-menu-extra {
+			display: inline-block;
+			margin-left: 30px;
+			display:none;
+			right:40px;
+		}
+	
+		&:not(.center, .left) {
+			.header-menu {
+				.nav {
+					.nav-item {
+						&:last-child, 
+						&:nth-last-child(2) {
+							.nav-dropdown {
+								right: 0;
+								left: auto;
+								.nav-dropdown-item {
+									.nav-subdropdown {
+										right: 243px;
+										left: auto;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		
+		}
+	}
+}
+@include breakpoint-less(md) {
+	.header {
+		height: 70px;
+		.header-menu {
+			position: fixed;
+			top: 0;
+			left: 100%;
+			overflow-y: auto;
+			background: $color-white;
+			width: 300px;
+			height: 100%;
+			@include box-shadow(0 0 36px 0 rgba(22,25,28,0.17));
+			padding: 20px 30px;
+			@include transition(all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1));
+			&.show {
+				left: 0;
+			}
+			.nav {
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				.nav-item {
+					position: relative;
+					display: block;
+					width: 100%;
+					height: auto;
+					margin: 0;
+					border-bottom: 1px solid $border-dark-grey;
+					padding: 14px 0;
+					&:last-child {
+						border: 0;
+					}
+					.nav-link {
+						display: inline-block;
+						width: auto;
+						height: auto;
+						color: $color-main;
+						&:hover, &:focus, &.active { color: $color-main; }
+					}
+				
+				
+				}
+			}
+		}
+		.header-menu-extra {
+			position: absolute;
+			top: 50%;
+			right: 80px;
+			left: auto;
+			@include transform(translateY(-50%));
+			display:none;
+			right:40px;
+		}
+	}
+}
+
+@media screen and (max-width: $phone-width) {
+	.header {
+		height: 40px;
+	
+    .header-menu-extra {
+		display:block;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet-width) {
+	.header {
+		height:40px;
+	.header-menu-extra {
+		display:block;
+	}
+	}
+}
+@media screen and (max-width: $mid-desktop-width) { 
+	.header {
+		height: 40px;
+	}
+	.header-menu-extra {
+		display: none;
+	}
+}

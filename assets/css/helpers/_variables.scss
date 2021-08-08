@@ -1,0 +1,49 @@
+//
+// Font //
+//
+$font-family-primary: 'Open Sans', sans-serif;
+$font-family-secondary: 'Playfair Display', serif;
+$font-family-tertiary: 'Poppins', sans-serif;
+$font-weight-black: 900;
+$font-weight-extra-bold: 800;
+$font-weight-bold: 700;
+$font-weight-semi-bold: 600;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+$font-weight-extra-light: 200;
+$font-weight-thin: 100;
+
+//
+// Colors //
+//
+$color-white: #fff;
+$color-black: #000;
+$color-main:#222222;
+$color-main-light:#888888;
+//
+// Background colors //
+//
+
+$bg-header: #F6F6F7;
+
+//
+// Border colors //
+//
+$border-light-grey: #CCCCCC;
+$border-dark-grey:#222222;
+
+
+//
+// Button colors //
+//
+$button-dark: $color-main;
+$button-dark-lighter: rgb(29, 32, 35);
+$button-grey: rgb(229, 232, 235);
+$button-grey-lighter: rgb(239, 242, 245);
+$button-grey-darker: rgb(221, 224, 227);
+
+//Screen reso
+$phone-width: 414px;
+$tablet-width: 768px;
+$mid-desktop-width: 998px;

@@ -1,0 +1,89 @@
+//
+// Button styles //
+//
+a {
+	color: $color-main;
+	@include transition(linear 0.1s);
+	&:hover {
+		color: $color-main;
+		text-decoration: none;
+	}
+}
+button {
+	background: transparent;
+	box-shadow: none;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+}
+a, button {
+	&:focus, &:active {
+		box-shadow: none;
+		outline: 0;
+	}
+}
+
+.button {
+	font: 400 13px $font-family-tertiary;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.button {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	background: $button-dark;
+	border: 2px solid $button-dark;
+	padding: 5px 10px;
+	color: $color-main;
+	@include transition(ease-out 0.12s);
+	i {
+		margin-right: 8px;
+		font-size: 15px;
+	}
+	&:hover {
+		color: $color-main;
+	}
+}
+
+//
+//  Button - Sizes //
+//
+.button-xs { padding: 7px 16px; }
+.button-sm { padding: 10px 22px; }
+.button-md { padding: 14px 34px; }
+.button-lg { padding: 16px 42px; }
+.button-xl { padding: 18px 50px; }
+
+
+
+//
+//  Button - Outline //
+//
+.button-outline-grey, a.button-outline-grey {
+	background: transparent;
+	border: 0.5px solid $button-grey;
+	border-color: $border-light-grey;
+	&:hover, &:focus {
+		border: 2px solid $button-grey;
+		border-color: $border-dark-grey;
+		color: $color-main;
+	}
+}
+
+
+.button-outline-dark-2, a.button-outline-dark-2 {
+	background: transparent;
+	border-color: $button-dark;
+	&:hover, &:focus {
+		background: $button-dark;
+		border-color: transparent;
+		color: $color-white;
+	}
+}
+
+
+.button-square {
+	width:45px;
+}

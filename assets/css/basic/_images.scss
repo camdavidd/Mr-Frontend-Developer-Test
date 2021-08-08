@@ -1,0 +1,39 @@
+//
+// Image Styles //
+//
+
+.shop-img {
+    img {
+        width: 70%;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+@media screen and (max-width: $phone-width) {
+	.shop-img {
+        img {
+		width: 100%;
+	
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-width) {
+	.shop-img {
+        img {
+		width: 100%;
+	
+        }
+    }
+}
+@media screen and (max-width: $mid-desktop-width) {
+	.shop-img {
+        img {
+		width: 100%;
+	
+        }
+    }
+}
